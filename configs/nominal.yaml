@@ -1,0 +1,12 @@
+plant: planar-quadrotor
+controller: lqg
+estimator: ekf
+scenario: gps-dropout-and-wind
+seed: 0
+duration_s: 10.0
+sample_time_s: 0.01
+wind_force_n: 0.8
+fault:
+  gps_dropout_s: [3.0, 4.0]
+  gps_bias_m: 0.0
+

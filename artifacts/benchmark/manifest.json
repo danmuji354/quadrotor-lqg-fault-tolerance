@@ -1,0 +1,9 @@
+{
+  "suite": "standard",
+  "scenarios": [
+    "nominal",
+    "gps_dropout",
+    "wind_gust",
+    "gps_bias"
+  ]
+}

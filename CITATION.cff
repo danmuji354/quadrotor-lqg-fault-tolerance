@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: Quadrotor LQG Fault Tolerance
+message: Cite this repository if its benchmark supports your work.
+type: software
+authors:
+  - alias: danmuji354
+version: 0.1.0
+license: MIT
+

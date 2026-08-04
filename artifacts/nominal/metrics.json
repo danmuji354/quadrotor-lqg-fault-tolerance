@@ -1,0 +1,6 @@
+{
+  "position_rmse_m": 0.1322516868980502,
+  "final_position_error_m": 0.001287408579020427,
+  "minimum_altitude_m": 0.0,
+  "maximum_covariance_eigenvalue": 0.0268333113387607
+}

@@ -1,0 +1,26 @@
+{
+  "nominal": {
+    "position_rmse_m": 0.007359279471806534,
+    "final_position_error_m": 0.0018776438412453538,
+    "minimum_altitude_m": 0.0,
+    "maximum_covariance_eigenvalue": 0.0268333113387607
+  },
+  "gps_dropout": {
+    "position_rmse_m": 0.008752389605740743,
+    "final_position_error_m": 0.0010122257719508076,
+    "minimum_altitude_m": 0.0,
+    "maximum_covariance_eigenvalue": 0.0268333113387607
+  },
+  "wind_gust": {
+    "position_rmse_m": 0.035083127773292186,
+    "final_position_error_m": 0.002291867203667908,
+    "minimum_altitude_m": 0.0,
+    "maximum_covariance_eigenvalue": 0.0268333113387607
+  },
+  "gps_bias": {
+    "position_rmse_m": 0.11566101667188451,
+    "final_position_error_m": 0.11191362885673775,
+    "minimum_altitude_m": 0.0,
+    "maximum_covariance_eigenvalue": 0.0268333113387607
+  }
+}
