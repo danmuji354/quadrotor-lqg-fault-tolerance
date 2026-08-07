@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "repository": "quadrotor-lqg-fault-tolerance",
+  "title": "Quadrotor LQG Fault Tolerance",
+  "tagline": "EKF and LQG flight control under dropout, bias, and wind.",
+  "accent": "#2563eb",
+  "highlights": [
+    {
+      "label": "nominal RMSE",
+      "value": "0.007 m"
+    },
+    {
+      "label": "1 s dropout RMSE",
+      "value": "0.009 m"
+    },
+    {
+      "label": "dropout final error",
+      "value": "0.001 m"
+    }
+  ],
+  "assets": [
+    {
+      "path": "hero.png",
+      "role": "hero",
+      "width": 1600,
+      "height": 900,
+      "alt": "Quadrotor trajectories and estimator error through GPS dropout."
+    },
+    {
+      "path": "benchmark.png",
+      "role": "analysis",
+      "width": 1600,
+      "height": 900,
+      "alt": "Position RMSE and final error across four injected faults."
+    },
+    {
+      "path": "demo.gif",
+      "role": "animation",
+      "width": 720,
+      "height": 405,
+      "alt": "Animated true and estimated quadrotor flight during GPS loss."
+    },
+    {
+      "path": "architecture.svg",
+      "role": "diagram",
+      "width": 1260,
+      "height": 270,
+      "alt": "Sensor, EKF, LQG, actuator, and nonlinear plant architecture."
+    }
+  ],
+  "reproduce": "python -m quadrotor_lqg.gallery --output artifacts/gallery"
+}

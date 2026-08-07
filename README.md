@@ -2,7 +2,7 @@
 
 A from-scratch planar quadrotor simulation that combines nonlinear rigid-body dynamics, a partial-update EKF, and LQG trajectory tracking. Its benchmark makes GPS dropout, bias, and wind gusts first-class reproducible scenarios.
 
-![LQG/EKF trajectory](artifacts/nominal/response.png)
+![LQG tracking through a one-second GPS dropout](artifacts/gallery/hero.png)
 
 | Scenario | Position RMSE | Final error |
 |---|---:|---:|
@@ -18,10 +18,21 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 python -m quadrotor_lqg.simulate --config configs/nominal.yaml
 python -m quadrotor_lqg.benchmark --suite standard
+python -m quadrotor_lqg.gallery --output artifacts/gallery
 pytest
 ```
 
 Outputs are written as JSON metrics, CSV time series, and a trajectory figure under `artifacts/`.
+
+## Website-ready gallery
+
+![Quadrotor and EKF estimate during GPS dropout](artifacts/gallery/demo.gif)
+
+![Fault-injection benchmark](artifacts/gallery/benchmark.png)
+
+![Estimator and controller architecture](artifacts/gallery/architecture.svg)
+
+`artifacts/gallery/showcase.json` is a versioned website manifest containing titles, highlights, alt text, dimensions, and the exact reproduction command. `scenario_metrics.csv` preserves the plotted values, while the checked-in PNG, GIF, and SVG assets can be embedded directly.
 
 ## Original contributions
 
